@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Naruto</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fde1a5; /* Light orange background */
+            color: #333;
+        }
+        header {
+            background-color: #ff6c00; /* Naruto orange */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+        nav {
+            background-color: #ff8c1a; /* Slightly lighter orange */
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Rounded corners for images */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .image-container a:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Add some styling for the headings and paragraphs */
+        h2 {
+            color: #ff6c00;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Interactive elements */
+        .expandable-section {
+            display: none;
+            max-width: 100%;
+        }
+
+        .expand-btn {
+            cursor: pointer;
+            color: #ff6c00;
+            text-decoration: underline;
+        }
+
+        .expand-btn:hover {
+            color: #ff8c1a;
+        }
+
+        .image-container a {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container a:hover::before {
+            opacity: 1;
+        }
+
+        .image-container img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="margin: 0;">Tribute to Naruto</h1>
+    </header>
+    <nav>
+        <a href="#about">About Naruto</a>
+        <a href="#gallery">Image Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Naruto</h2>
+            <p>Naruto is a Japanese manga and anime series created by Masashi Kishimoto. It follows the journey of Naruto Uzumaki, a young ninja with a dream of becoming the Hokage, the strongest ninja and leader of his village. Orphaned at a young age, Naruto grows up facing discrimination and loneliness in his village due to the presence of the Nine-Tails, a powerful fox spirit sealed within him. Despite the hardships, Naruto maintains an indomitable spirit and an unwavering determination to prove his worth.</p>
+            <p>Throughout the series, Naruto forms lasting bonds with his friends and comrades, including Sasuke Uchiha and Sakura Haruno. Together, they navigate the challenges of being ninja and confront formidable enemies. Naruto's journey is one of self-discovery, forgiveness, and the pursuit of peace. Along the way, he learns valuable lessons about friendship, sacrifice, and the true meaning of being a leader.</p>
+            <div class="expandable-section">
+                <p>The series is renowned for its epic battles, emotional storytelling, and memorable characters. It has captivated fans worldwide and left a lasting impact on the anime community.</p>
+                <p>Naruto's iconic techniques, such as the Rasengan and Shadow Clone Jutsu, have become iconic in the world of anime. The show's themes of perseverance, never giving up, and believing in oneself have resonated with audiences of all ages.</p>
+                <p>Naruto's journey of redemption and his determination to bring his friend Sasuke back from darkness have touched the hearts of millions. The bond between Naruto and his mentor, Jiraiya, and his father-like figure, Iruka, have added depth to the emotional narrative of the series.</p>
+            </div>
+            <p class="expand-btn" onclick="toggleExpandableSection()">Read More</p>
+        </section>
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <div class="image-container">
+                <!-- Add more images with image links here -->
+                <a href="^1^" target="_blank">
+                    <img src="https://images4.alphacoders.com/476/thumbbig-47698.webp" alt="Naruto Image 1">
+                </a>
+                <a href="^2^" target="_blank">
+                    <img src="https://images2.alphacoders.com/718/thumbbig-71840.webp" alt="Naruto Image 2">
+                </a>
+                <a href="^3^" target="_blank">
+                    <img src="https://images5.alphacoders.com/413/thumbbig-413842.webp" alt="Naruto Image 3">
+                </a>
+                <a href="^4^" target="_blank">
+                    <img src="https://images2.alphacoders.com/516/thumbbig-516246.webp" alt="Naruto Image 4">
+                </a>
+                <a href="^5^" target="_blank">
+                    <img src="https://images5.alphacoders.com/132/thumbbig-1322558.webp" alt="Naruto Image 5">
+                </a>                
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or want to share your love for Naruto, feel free to contact us at:</p>
+            <p>Email: narutofan@gmail.com</p>
+            <p>Phone: 9494741081</p>
+        </section>
+    </main>
+    <script>
+        // Smooth scroll to sections when clicking on navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Function to toggle the expandable section
+        function toggleExpandableSection() {
+            const expandableSection = document.querySelector('.expandable-section');
+            const expandBtn = document.querySelector('.expand-btn');
+            if (expandableSection.style.display === 'none') {
+                expandableSection.style.display = 'block';
+                expandBtn.textContent = 'Read Less';
+            } else {
+                expandableSection.style.display = 'none';
+                expandBtn.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+</html>
