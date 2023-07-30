@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    border: 2px solid #4da5b6; /* Dark cyan border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    background-color: #e0f2f1; /* Lighter cyan calculator background */
+    width: 320px;
+    max-width: 90%;
+}
+
+#display {
+    width: 93%;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #b2dfdb; /* Light cyan display background */
+    color: #00695c; /* Dark cyan text color */
+    border: 1px solid #4db6ac; /* Dark cyan border */
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #e0f2f1; /* Lighter cyan button background */
+    color: #00695c; /* Dark cyan button text color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #80cbc4; /* Hover color for buttons */
+    color: #fff; /* Hover color for button text */
+}
+
+.operator {
+    background-color: #009688; /* Darker cyan operator background */
+    color: #fff; /* White operator text color */
+}
+
+.operator:hover {
+    background-color: #00796b; /* Hover color for operators */
+}
